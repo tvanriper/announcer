@@ -1,5 +1,8 @@
 # Announcer
 
+[![Go Reference](https://pkg.go.dev/badge/golang.org/x/example.svg)](https://pkg.go.dev/github.com/tvanriper/announcer)
+[![Coverage Status](https://coveralls.io/repos/github/tvanriper/announcer/badge.svg?branch=main)](https://coveralls.io/github/tvanriper/announcer?branch=main)
+
 Provides a write-once-read-many channel of communications in pure Golang.
 
 ## Usage
