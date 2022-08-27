@@ -10,7 +10,7 @@ As an overview:
 * Let different components listen to the announcer.
 * Send information through the announcer to the listeners.
 
-This looks like:
+This looks like (without proper error checking):
 
 ```golang
 sender := announcer.New(5)
@@ -18,10 +18,10 @@ listenA := sender.Listen()
 listenB := sender.Listen()
 sender.Send("hullo, world")
 if hulloA, ok := listenA.Listen(); ok {
-    fmt.Println(hulloA)
+    fmt.Println(hulloA.(string))
 }
 if hulloB, ok := listenB.Listen(); ok {
-    fmt.Println(hulloB)
+    fmt.Println(hulloB.(string))
 }
 sender.Close()
 ```
