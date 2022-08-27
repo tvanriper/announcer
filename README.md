@@ -27,3 +27,7 @@ sender.Close()
 ```
 
 This is obviously much more interesting when using Golang threads.
+
+## Installation
+
+`go get github.com/tvanriper/announcer`
